@@ -1,36 +1,39 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Content Manager</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-  <!-- Include the script that builds the page and powers Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script type="module">
-  const { files } = await (await fetch('/_content/blog.json')).json(); // Netlify serves this
-  const container = document.getElementById('post-list');
-  for (const file of files) {
-    const md = await (await fetch(file)).text();
-    const html = marked.parse(md);
-    container.insertAdjacentHTML('beforeend', `<article>${html}</article>`);
-  }
-</script>
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog – Work With Bola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; max-width: 42rem; }
+      article { margin-bottom: 3rem; border-bottom: 1px solid #ddd; padding-bottom: 2rem; }
+      h1 { font-size: 2.25rem; margin-bottom: 1rem; }
+      img { width: 100%; height: auto; border-radius: .5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Latest Insights</h1>
+    <div id="posts">Loading…</div>
 
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
+    <script>
+      (async () => {
+        const res   = await fetch('/content/blog');
+        const text  = await res.text();
+        const dom   = new DOMParser().parseFromString(text, 'text/html');
+        const links = [...dom.querySelectorAll('a')]
+                           .map(a => a.href)
+                           .filter(h => h.endsWith('.md'));
+
+        const container = document.getElementById('posts');
+        container.innerHTML = '';
+
+        for (const url of links) {
+          const md   = await fetch(url).then(r => r.text());
+          const html = marked.parse(md);
+          container.insertAdjacentHTML('beforeend', `<article>${html}</article>`);
         }
-      });
-    }
-  </script>
-</body>
+      })();
+    </script>
+  </body>
 </html>
