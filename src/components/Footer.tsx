@@ -73,7 +73,7 @@ const Footer = () => {
             <h4 className="font-semibold text-gray-900 dark:text-white mb-6">Get in Touch</h4>
             <div className="space-y-4">
               <a
-                href="mailto:bolaolaniyanadedayo@gmail.com"
+                href="mailto:hello@workwithbola.xyz"
                 className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 group"
               >
                 <Mail className="w-4 h-4 mr-3 group-hover:scale-110 transition-transform duration-200" />
