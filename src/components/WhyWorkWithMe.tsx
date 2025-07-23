@@ -15,7 +15,7 @@ const WhyWorkWithMe = () => {
     },
     {
       icon: Target,
-      title: 'One-off fixes or ongoing help — your choice',
+      title: 'One-off fixes or ongoing help, your choice',
       description: 'Flexible engagement based on your needs.'
     }
   ];
