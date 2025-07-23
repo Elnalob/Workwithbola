@@ -67,7 +67,7 @@ const Header = () => {
             ))}
             <ThemeToggle />
             <a
-              href="https://calendly.com/bolaolaniyanadedayo"
+              href="https://calendly.com/hello-workwithbola/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-blue-600 dark:bg-blue-500 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -104,7 +104,7 @@ const Header = () => {
               ))}
               <div className="px-4 pt-2">
                 <a
-                  href="https://calendly.com/bolaolaniyanadedayo"
+                  href="https://calendly.com/hello-workwithbola/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 dark:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-200"

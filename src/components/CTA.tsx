@@ -12,7 +12,7 @@ const CTA = () => {
           <div className="absolute inset-0 opacity-10 dark:opacity-20">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-emerald-400 dark:from-blue-300 dark:to-emerald-300"></div>
           </div>
-          
+          /* Content */
           <div className="relative z-10">
             <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
               Ready to Look the Part?
@@ -23,12 +23,12 @@ const CTA = () => {
             </p>
 
             <a
-              href="https://calendly.com/bolaolaniyanadedayo"
+              href="https://calendly.com/hello-workwithbola/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-block bg-white text-gray-900 px-12 py-4 rounded-lg font-semibold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <span className="group-hover:mr-2 transition-all duration-300">Talk With Bola — Free 15-min Chat</span>
+              <span className="group-hover:mr-2 transition-all duration-300">Book Free 15-min Chat</span>
               <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
             </a>
 

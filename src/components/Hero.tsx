@@ -26,13 +26,13 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-12 leading-relaxed max-w-4xl font-medium animate-slide-up">
-            Let's fix how your business looks — fast. Websites and digital solutions that earn trust.
+            Let's fix how your business looks fast. Websites and digital solutions that earn trust.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delayed">
             <a
-              href="https://calendly.com/bolaolaniyanadedayo"
+              href="https://calendly.com/hello-workwithbola/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"

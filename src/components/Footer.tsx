@@ -34,7 +34,7 @@ const Footer = () => {
             <h4 className="font-semibold text-gray-900 dark:text-white mb-6">Quick Links</h4>
             <div className="space-y-4">
               <a
-                href="https://calendly.com/bolaolaniyanadedayo"
+                href="https://calendly.com/hello-workwithbola/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"

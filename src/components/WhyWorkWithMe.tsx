@@ -1,4 +1,3 @@
-import React from 'react';
 import { User, Zap, Target } from 'lucide-react';
 
 const WhyWorkWithMe = () => {
