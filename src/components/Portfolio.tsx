@@ -121,7 +121,7 @@ const Portfolio = () => {
               className="group inline-flex items-center bg-white text-blue-600 dark:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <span className="hidden sm:inline">Book a Meeting to See How This Works for You</span>
-              <span className="sm:hidden">Book a Meeting</span>
+              <span className="sm:hidden">Book Meeting</span>
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
