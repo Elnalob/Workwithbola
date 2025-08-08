@@ -28,7 +28,10 @@ const CTA = () => {
               rel="noopener noreferrer"
               className="group inline-block bg-white text-gray-900 px-12 py-4 rounded-lg font-semibold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
-              <span className="group-hover:mr-2 transition-all duration-300">Book Free 15-min Chat</span>
+              <span className="group-hover:mr-2 transition-all duration-300">
+                <span className="hidden sm:inline">Book Free 15-min Chat</span>
+                <span className="sm:hidden">Book Free Chat</span>
+              </span>
               <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
             </a>
 
