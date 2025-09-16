@@ -21,6 +21,12 @@ const Portfolio = () => {
       image: '/Inspired charity logo.webp',
       linkText: 'View Live Site'
     }
+    {
+      name: 'Rivonia Diagnostics',
+      url: 'https://www.rivonia.netlify.app',
+      image: '/Rivonia Diagnostics.webp',
+      linkText: 'View Live Site'
+    }
   ];
 
   const digitalSolutions = [
