@@ -12,6 +12,11 @@ const Testimonials = () => {
       quote: "Professional, fast, and exactly what we needed to build trust with investors.",
       author: "Ololade",
       company: "HDI"
+    },
+    {
+      quote: "I'm happy. Your work ethics are 💯 you are true to your word.",
+      author: "Nana Esi Lassey ASAMAN",
+      company: ""
     }
   ];
 

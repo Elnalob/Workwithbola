@@ -24,16 +24,12 @@ const Portfolio = () => {
     {
       name: 'Rivonia Diagnostics',
       url: 'https://www.rivonia.netlify.app',
-      image: '/Rivonia Diagnostics.webp',
+      image: '/Rivonia web.webp',
       linkText: 'View Live Site'
     }
   ];
 
   const digitalSolutions = [
-    {
-      name: 'Professional ID Cards',
-      image: '/id card.webp'
-    },
     {
       name: 'Investor-Ready Presentations',
       image: '/HDi Company Profile Presentation.webp'
@@ -95,11 +91,11 @@ const Portfolio = () => {
             Digital Solutions I've Created:
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 gap-8 mb-12">
             {digitalSolutions.map((solution, index) => (
               <div
                 key={index}
-                className="group bg-white dark:bg-gray-800/50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500 border border-gray-100 dark:border-gray-700 backdrop-blur-sm"
+                className="group bg-white dark:bg-gray-800/50 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-500 border border-gray-100 dark:border-gray-700 backdrop-blur-sm max-w-md mx-auto"
               >
                 <div className="aspect-video bg-gray-100 dark:bg-gray-700 overflow-hidden">
                   <img
