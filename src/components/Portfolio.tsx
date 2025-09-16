@@ -20,7 +20,7 @@ const Portfolio = () => {
       url: 'https://inspiredafrica54.org/',
       image: '/Inspired charity logo.webp',
       linkText: 'View Live Site'
-    }
+    },
     {
       name: 'Rivonia Diagnostics',
       url: 'https://www.rivonia.netlify.app',
